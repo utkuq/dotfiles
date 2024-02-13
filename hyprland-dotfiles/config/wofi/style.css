@@ -1,0 +1,36 @@
+*{
+    border-radius: 3px;
+    border: none;
+}
+
+window{
+    font-size: 28px;
+    font-family: Fira Code Nerd Font;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#entry{
+    padding: 0.3em;
+}
+
+#entry:selected{
+    background-color: white;
+    color: black;
+}
+
+#text:selected{
+    color: black;
+}
+
+#input{
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    color: white;
+    padding: 0.3em;
+}
+
+image{
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
