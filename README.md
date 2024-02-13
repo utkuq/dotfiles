@@ -1,4 +1,4 @@
-# VM CONFIGS
+# WM CONFIGS
 
 ![asd](hyprland-dotfiles/Screenshots/1.png)
 <br>
