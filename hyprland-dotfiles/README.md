@@ -12,10 +12,7 @@
 - App Launcher: [wofi](https://hg.sr.ht/~scoopta/wofi)
 - Lockscreen: [swaylock-effects](https://github.com/mortie/swaylock-effects)
 - Screenshot: [grim](https://sr.ht/~emersion/grim/) and [slurp](https://github.com/emersion/slurp)
-
-## Fonts used
-
-- [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip)
+- Font: [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/FiraCode.zip)
 
 ## Note
 
