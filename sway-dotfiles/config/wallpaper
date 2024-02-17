@@ -1,0 +1,2 @@
+# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+output * bg ~/.config/wallpapers/5.png fill
