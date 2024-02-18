@@ -1,0 +1,9 @@
+# xdg-desktop-portal-wlr activation (for screen sharing)
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+include ~/.config/sway/monitors
+include ~/.config/sway/binds
+include ~/.config/sway/settings
+# include /etc/sway/config.d/* # from default config
+include ~/.config/sway/startup
+

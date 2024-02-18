@@ -1,0 +1,2 @@
+exec indicator-sound-switcher
+exec ~/.config/sway/scripts/wallpaper.sh
