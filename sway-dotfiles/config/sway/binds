@@ -30,8 +30,8 @@ bindsym $mod+d exec $menu
 # mouse button for dragging.
 floating_modifier $mod normal
 
-# Reload the configuration file
-bindsym $mod+Shift+c reload
+# Reload the configuration file and resume dunst notifications
+bindsym $mod+Shift+c reload; killall -SIGUSR2 dunst
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -162,8 +162,8 @@ bindsym $mod+r mode "resize"
 # Custom binds:
 #################################################################################################################
 
-# Disable laptop monitor + set external monitor for cs2 resolution
-bindsym $mod+O output "HDMI-A-1" pos 0 0 res 1024x768@75Hz; output "eDP-1" disable
+# Disable laptop monitor + set external monitor for cs2 resolution + disable dunst while playing
+bindsym $mod+O output "HDMI-A-1" pos 0 0 res 1024x768@75Hz; output "eDP-1" disable; killall -SIGUSR1 dunst
 # bindsym $mod+K output "HDMI-A-1" pos 0 0 res 1920x1080; output "eDP-1" pos 1920 0 res 1920x1080
 
 # Wofi all apps mode
@@ -178,3 +178,23 @@ bindsym Print exec ~/.config/sway/scripts/screenshot.sh
 
 # Screenlock
 bindsym $mod+x exec ~/.config/sway/scripts/screenlock.sh
+
+# Media & volume keys
+# play-pause
+bindsym XF86AudioPlay exec playerctl play-pause
+
+# next song
+bindsym XF86AudioNext exec playerctl next
+
+# previous song
+bindsym XF86AudioPrev exec playerctl previous
+
+# increase volume
+bindsym XF86AudioRaiseVolume exec pactl -- set-sink-volume 0 +5%
+
+# decrease volume
+bindsym XF86AudioLowerVolume exec pactl -- set-sink-volume 0 -5%
+
+# mute
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+

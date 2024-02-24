@@ -10,23 +10,25 @@ images=$(find "$folder" -type f -name "*.$extension" | sort -R)
 random_image=$(echo "$images" | shuf -n 1)
 
 swaylock \
-    --image $random_image \
+    --color 000000 \
     --clock \
     --indicator \
+    --datestr %d/%m/%Y \
     --indicator-radius 300 \
-    --indicator-thickness 7 \
+    --indicator-thickness 10 \
     --effect-blur 7x5 \
     --effect-vignette 0.5:0.5 \
-    --ring-color ffffff \
+    --ring-color ffffff00 \
     --key-hl-color 880033 \
     --line-color 00000000 \
     --inside-color 00000088 \
     --separator-color 00000000 \
-    --grace 2 \
-    #--fade-in 0.05
+    --grace 0 \
+    --fade-in 0.1
 
-# Default config
+# Default config 
 # swaylock \
+#   ----image $random_image \
 # 	--screenshots \
 # 	--clock \
 # 	--indicator \

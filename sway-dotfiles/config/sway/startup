@@ -1,2 +1,3 @@
 exec indicator-sound-switcher
 exec ~/.config/sway/scripts/wallpaper.sh
+exec ~/.config/sway/scripts/prompt.sh
