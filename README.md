@@ -1,13 +1,22 @@
-# WM CONFIGS
+# [1. HYPRLAND CONFIG](hyprland-dotfiles/README.md)
 
 ![Hyprland Screenshot](hyprland-dotfiles/Screenshots/1.png)
-<br>
-[HYPRLAND CONFIG](hyprland-dotfiles/README.md)<br><br>
-Currently no image for i3 <br>
-[i3WM CONFIG](i3wm-dotfiles/README.md)
 <br><br>
+
+# [2. i3WM CONFIG](i3wm-dotfiles/README.md)
+
+Currently no image for i3 <br>
+<br><br>
+
+# [3. SWAY CONFIG](sway-dotfiles/README.md)
+
 ![Sway Screenshot](sway-dotfiles/Screenshots/1.png)
-[SWAY CONFIG](sway-dotfiles/README.md)
+<br><br>
+
+# WALLPAPERS
+
+[HERE](hyprland-dotfiles/config/wallpapers/)
+<br><br>
 
 ## Removing Beeping Sound of Archlinux
 
